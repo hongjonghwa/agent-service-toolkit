@@ -36,6 +36,7 @@ _MODEL_TABLE = {
     AnthropicModelName.HAIKU_3: "claude-3-haiku-20240307",
     AnthropicModelName.HAIKU_35: "claude-3-5-haiku-latest",
     AnthropicModelName.SONNET_35: "claude-3-5-sonnet-latest",
+    AnthropicModelName.SONNET_37: "claude-3-7-sonnet-latest",
     GoogleModelName.GEMINI_15_FLASH: "gemini-1.5-flash",
     GoogleModelName.GEMINI_20_FLASH: "gemini-2.0-flash",
     GroqModelName.LLAMA_31_8B: "llama-3.1-8b-instant",

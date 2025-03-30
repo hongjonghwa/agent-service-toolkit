@@ -8,6 +8,7 @@ from agents.command_agent import command_agent
 from agents.interrupt_agent import interrupt_agent
 from agents.langgraph_supervisor_agent import langgraph_supervisor_agent
 from agents.research_assistant import research_assistant
+from agents.english_translation_agent import english_translation_agent
 from schema import AgentInfo
 
 DEFAULT_AGENT = "research-assistant"
@@ -30,6 +31,7 @@ agents: dict[str, Agent] = {
         description="A langgraph supervisor agent", graph=langgraph_supervisor_agent
     ),
     "interrupt-agent": Agent(description="An agent the uses interrupts.", graph=interrupt_agent),
+    "english-translation-agent": Agent(description="영어로 간결히 요약해주는 에이전트", graph=english_translation_agent),
 }
 
 
@@ -41,3 +43,4 @@ def get_all_agent_info() -> list[AgentInfo]:
     return [
         AgentInfo(key=agent_id, description=agent.description) for agent_id, agent in agents.items()
     ]
+

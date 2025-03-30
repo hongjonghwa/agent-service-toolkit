@@ -1,3 +1,6 @@
+# 랭그래프
+.langgraph_api
+
 # Streamlit and sqlite
 .streamlit/secrets.toml
 checkpoints.db
