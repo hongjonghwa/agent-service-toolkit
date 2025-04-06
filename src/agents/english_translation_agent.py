@@ -134,4 +134,6 @@ agent.add_node("model", acall_model)
 agent.set_entry_point("model")
 agent.add_edge("model", END)
 
-english_translation_agent = agent.compile(checkpointer=MemorySaver())
+english_translation_agent = agent.compile(
+    # checkpointer=MemorySaver()
+)

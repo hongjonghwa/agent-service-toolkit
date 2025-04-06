@@ -3,7 +3,8 @@
     "dependencies": ["."],
     "graphs": {
         "research_assistant": "./src/agents/research_assistant.py:research_assistant",
-        "english_translation_agent": "./src/agents/english_translation_agent.py:english_translation_agent"
+        "english_translation_agent": "./src/agents/english_translation_agent.py:english_translation_agent",
+        "ReAct agent": "./src/agents/react_agent.py:react_agent"
     },
     "env": "./.env"
 }

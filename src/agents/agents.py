@@ -9,9 +9,11 @@ from agents.interrupt_agent import interrupt_agent
 from agents.langgraph_supervisor_agent import langgraph_supervisor_agent
 from agents.research_assistant import research_assistant
 from agents.english_translation_agent import english_translation_agent
+from agents.react_agent import react_agent
 from schema import AgentInfo
 
-DEFAULT_AGENT = "research-assistant"
+# DEFAULT_AGENT = "research-assistant"
+DEFAULT_AGENT = "react-agent"
 
 
 @dataclass
@@ -32,6 +34,7 @@ agents: dict[str, Agent] = {
     ),
     "interrupt-agent": Agent(description="An agent the uses interrupts.", graph=interrupt_agent),
     "english-translation-agent": Agent(description="영어로 간결히 요약해주는 에이전트", graph=english_translation_agent),
+    "react-agent": Agent(description="추론&행동 에이전트", graph=react_agent),
 }
 
 

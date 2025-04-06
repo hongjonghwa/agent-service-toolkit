@@ -38,17 +38,18 @@ class DeepseekModelName(StrEnum):
 class AnthropicModelName(StrEnum):
     """https://docs.anthropic.com/en/docs/about-claude/models#model-names"""
 
-    HAIKU_3 = "claude-3-haiku"
+    # HAIKU_3 = "claude-3-haiku"
     HAIKU_35 = "claude-3.5-haiku"
-    SONNET_35 = "claude-3.5-sonnet"
+    # SONNET_35 = "claude-3.5-sonnet"
     SONNET_37 = "claude-3.7-sonnet"
 
 
 class GoogleModelName(StrEnum):
     """https://ai.google.dev/gemini-api/docs/models/gemini"""
 
-    GEMINI_15_FLASH = "gemini-1.5-flash"
+    # GEMINI_15_FLASH = "gemini-1.5-flash"
     GEMINI_20_FLASH = "gemini-2.0-flash"
+    GEMINI_25_PRO = "gemini-2.5-pro"
 
 
 class GroqModelName(StrEnum):

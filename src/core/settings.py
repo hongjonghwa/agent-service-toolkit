@@ -143,11 +143,11 @@ class Settings(BaseSettings):
                     self.AVAILABLE_MODELS.update(set(DeepseekModelName))
                 case Provider.ANTHROPIC:
                     if self.DEFAULT_MODEL is None:
-                        self.DEFAULT_MODEL = AnthropicModelName.HAIKU_3
+                        self.DEFAULT_MODEL = AnthropicModelName.SONNET_37
                     self.AVAILABLE_MODELS.update(set(AnthropicModelName))
                 case Provider.GOOGLE:
                     if self.DEFAULT_MODEL is None:
-                        self.DEFAULT_MODEL = GoogleModelName.GEMINI_15_FLASH
+                        self.DEFAULT_MODEL = GoogleModelName.GEMINI_25_PRO
                     self.AVAILABLE_MODELS.update(set(GoogleModelName))
                 case Provider.GROQ:
                     if self.DEFAULT_MODEL is None:
